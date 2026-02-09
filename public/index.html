@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TON Payments Demo</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>TON Payments Demo</h1>
+    <p class="muted">Create a premium order for a user → pay via Tonkeeper → auto premium grant.</p>
+
+    <section class="card">
+      <h2>1) Create premium order</h2>
+      <div class="row">
+        <label>User ID</label>
+        <input id="userId" value="user_42" />
+        <button id="buyBtn">Create gate</button>
+      </div>
+      <pre id="orderOut" class="code"></pre>
+    </section>
+
+    <section class="card">
+      <h2>2) Pay</h2>
+      <div id="payBox" class="paybox hidden">
+        <a id="payLink" target="_blank" rel="noreferrer">Open in Tonkeeper</a>
+        <img id="qr" alt="QR" />
+        <p class="muted">Do not change the comment. Pay from a wallet that preserves comment/text.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3) User status</h2>
+      <button id="checkBtn">Check premium</button>
+      <pre id="userOut" class="code"></pre>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

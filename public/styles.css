@@ -1,0 +1,17 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+body { margin: 0; background: #0b0b0f; color: #e9e9ee; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 24px; }
+h1 { margin: 0 0 8px; }
+.muted { color: #a7a7b3; }
+.card { background: #151521; border: 1px solid #232336; border-radius: 14px; padding: 16px; margin: 14px 0; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+label { width: 70px; }
+input { flex: 1; min-width: 220px; padding: 10px 12px; border-radius: 10px; border: 1px solid #2a2a40; background: #0f0f18; color: #e9e9ee; }
+button { padding: 10px 12px; border-radius: 10px; border: 1px solid #2a2a40; background: #20203a; color: #e9e9ee; cursor: pointer; }
+button:hover { background: #2a2a4a; }
+.code { background: #0f0f18; border: 1px solid #2a2a40; border-radius: 10px; padding: 12px; overflow: auto; }
+.paybox { display: flex; flex-direction: column; gap: 10px; }
+.paybox img { width: 220px; height: 220px; image-rendering: pixelated; background: #fff; border-radius: 12px; padding: 10px; }
+a { color: #7fb3ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.hidden { display: none; }
